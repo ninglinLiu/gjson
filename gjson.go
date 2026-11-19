@@ -2291,7 +2291,7 @@ func GetBytes(json []byte, path string) Result {
 	return getBytes(json, path)
 }
 
-// runeit returns the rune from the the \uXXXX
+// runeit returns the rune from the \uXXXX
 func runeit(json string) rune {
 	n, _ := strconv.ParseUint(json[:4], 16, 64)
 	return rune(n)
