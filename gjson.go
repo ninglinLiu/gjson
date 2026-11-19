@@ -2065,9 +2065,9 @@ var DisableEscapeHTML = false
 var disableEscapeHTML atomic.Bool
 
 // SetEscapeHTML to enable/disable the automatic escaping of certain
-// "problamatic" HTML characters when encoding to JSON.
-// These character include '>', '<' and '&', which get escaped to \u003e,
-// \u0026, and \u003c respectively.
+// "problematic" HTML characters when encoding to JSON.
+// These characters include '>', '<' and '&', which get escaped to \u003e,
+// \u003c, and \u0026 respectively.
 func SetEscapeHTML(escapeHTML bool) {
 	disableEscapeHTML.Store(!escapeHTML)
 }
